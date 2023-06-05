@@ -1,0 +1,42 @@
+body{
+    /* background: url("https://img.freepik.com/premium-photo/blurred-library-bookshelves_23-2148448040.jpg"); */
+    background-color: black;
+    background-size: cover;
+    mask-repeat: no-repeat;
+}
+#show{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* margin-top: 50px; */
+}
+.pic{
+    height:90%;
+    width: 90%;
+    border-radius: 10px;
+
+    
+}
+
+#temp{
+    /* border: 2px solid; */
+    /* padding: 2px; */
+    /* margin: 5px; */
+    margin-top: 50px;
+    position: relative;
+
+}
+ span {
+    position: absolute;
+    top: 48%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,.70);
+    padding: 15px 0 16px;
+    margin-top: -28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.25;
+    color: #fff;
+}

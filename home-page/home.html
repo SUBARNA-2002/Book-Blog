@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON Data Rendering</title>
+    <link rel="stylesheet" href="/02-06-23/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="./home.css">
+        <link rel="shortcut icon" href="https://easydrawingguides.com/wp-content/uploads/2020/10/how-to-draw-an-open-book-featured-image-1200.png" type="image/x-icon">
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <a class="navbar-brand float-start " href="/home-page/home.html">
+          <h1 style="font-weight: bold; color: rgba(3, 124, 222, 0.726);">BookHub</h1></a>
+     <div class="float-end my-2">
+         <!-- <button class="btn btn-primary mx-2" id="btn">ADD</button>  -->
+         <button class="btn btn-primary  " onclick=logout_btn() id="logout">LOGOUT</button>
+         </div>
+    </div>   
+
+
+    <div id="show"></div>
+ 
+           
+   
+    <script src="/home-page/home.js"></script>
+    <script>
+        function logout_btn() {
+                alert("Logout Successful");
+                localStorage.removeItem("token");
+                window.location.href = "../index.html";
+            
+        }
+    </script>
+</body>
+
+</html>
